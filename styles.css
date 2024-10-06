@@ -1,10 +1,19 @@
 /* Estilos globales */
 body {
+    background-image: url('fondo11.jpeg'); /* Reemplaza 'fondo.jpg' con el nombre de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Esto hace que la imagen de fondo permanezca fija cuando se desplaza el contenido */
+    color: #ffffff; /* Cambia el color del texto para que sea legible sobre el fondo */
+}
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
+    color: #000; /* Texto blanco */
     display: flex; /* Usar flexbox para centrar el contenido */
     flex-direction: column; /* Colocar los elementos en columna */
     align-items: center; /* Alinear horizontalmente al centro */
@@ -105,6 +114,27 @@ footer {
 
 .nav-list a:hover {
     text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.integrante {
+    display: flex; /* Usar flexbox para alinear la descripción y la imagen */
+    align-items: center; /* Centrar verticalmente */
+    margin-bottom: 20px; /* Espacio entre integrantes */
+}
+
+.descripcion {
+    flex: 1; /* Hacer que la descripción ocupe el espacio restante */
+    margin-right: 20px; /* Espacio entre la descripción y la imagen */
+}
+
+.integrante.reverse {
+    flex-direction: row-reverse; /* Invertir el orden en la clase reverse */
+}
+
+.integrante-img {
+    width: 150px; /* Tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 

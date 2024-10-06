@@ -1,29 +1,23 @@
 /* Estilos globales */
 body {
-    background-image: url('fondo11.jpeg'); /* Reemplaza 'fondo.jpg' con el nombre de tu imagen */
+    background-image: url('fondo11.jpeg'); /* Imagen de fondo */
     background-size: cover; /* Hace que la imagen cubra toda la página */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Esto hace que la imagen de fondo permanezca fija cuando se desplaza el contenido */
-    color: #ffffff; /* Cambia el color del texto para que sea legible sobre el fondo */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000; /* Fondo negro */
-    color: #000; /* Texto blanco */
-    display: flex; /* Usar flexbox para centrar el contenido */
-    flex-direction: column; /* Colocar los elementos en columna */
-    align-items: center; /* Alinear horizontalmente al centro */
-    min-height: 100vh; /* Asegurar que ocupe al menos el alto de la ventana */
+    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
+    color: #ffffff; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente global */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina padding */
+    display: flex; /* Usar flexbox para el cuerpo */
+    flex-direction: column; /* Organiza los elementos en columnas */
+    align-items: center; /* Centra horizontalmente el contenido */
 }
 
 /* Encabezado */
 header {
-    text-align: center; /* Centrar el contenido del encabezado */
-    background-color: #222; /* Color oscuro para el encabezado */
+    text-align: center; /* Centra el contenido del encabezado */
+    background-color: rgba(34, 34, 34, 0.8); /* Color oscuro semi-transparente */
     padding: 20px 0; /* Espaciado en el encabezado */
     width: 100%; /* Ancho completo */
 }
@@ -36,19 +30,21 @@ header {
 }
 
 /* Títulos */
-h1 {
-    font-size: 3rem; /* Tamaño del título */
-    margin: 0; /* Elimina margen */
+h1, h2 {
+    color: #ffffff; /* Color blanco para títulos */
+    margin: 0; /* Elimina márgenes */
 }
 
 /* Secciones */
 section {
     max-width: 800px; /* Ancho máximo para las secciones */
+    width: 100%; /* Asegura que las secciones llenen el ancho */
     margin: 20px; /* Margen alrededor de las secciones */
     padding: 20px; /* Espaciado interno */
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente para las secciones */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra ligera */
+    color: #ffffff; /* Color del texto dentro de las secciones */
 }
 
 /* Galería */
@@ -83,7 +79,7 @@ button:hover {
 footer {
     text-align: center; /* Centrar texto */
     padding: 10px; /* Espaciado en el pie de página */
-    background-color: #222; /* Color oscuro para el pie de página */
+    background-color: rgba(34, 34, 34, 0.8); /* Color oscuro semi-transparente */
 }
 
 /* Íconos de redes sociales */
@@ -116,6 +112,7 @@ footer {
     text-decoration: underline; /* Subrayado al pasar el ratón */
 }
 
+/* Integrantes */
 .integrante {
     display: flex; /* Usar flexbox para alinear la descripción y la imagen */
     align-items: center; /* Centrar verticalmente */
@@ -136,6 +133,4 @@ footer {
     height: auto; /* Mantener la proporción */
     border-radius: 5px; /* Bordes redondeados */
 }
-
-
 
